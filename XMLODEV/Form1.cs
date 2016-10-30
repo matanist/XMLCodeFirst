@@ -58,6 +58,7 @@ namespace XMLODEV
             UrunDBEntities ent = new UrunDBEntities();
             ent.Urunler.AddRange(urunlerListesi);
             MessageBox.Show(ent.SaveChanges() > 0 ? "Veritabanına kayıt başarılı" : "Bir sorun var");
+            //TEst yorumu
         }
     }
     public class Urun
