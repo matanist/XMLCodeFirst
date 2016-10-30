@@ -28,12 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnVerileriCek = new System.Windows.Forms.Button();
+            this.lstKisiler = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // btnVerileriCek
+            // 
+            this.btnVerileriCek.Location = new System.Drawing.Point(28, 22);
+            this.btnVerileriCek.Name = "btnVerileriCek";
+            this.btnVerileriCek.Size = new System.Drawing.Size(110, 40);
+            this.btnVerileriCek.TabIndex = 0;
+            this.btnVerileriCek.Text = "Verileri Çek";
+            this.btnVerileriCek.UseVisualStyleBackColor = true;
+            this.btnVerileriCek.Click += new System.EventHandler(this.btnVerileriCek_Click);
+            // 
+            // lstKisiler
+            // 
+            this.lstKisiler.FormattingEnabled = true;
+            this.lstKisiler.ItemHeight = 18;
+            this.lstKisiler.Location = new System.Drawing.Point(12, 93);
+            this.lstKisiler.Name = "lstKisiler";
+            this.lstKisiler.Size = new System.Drawing.Size(401, 238);
+            this.lstKisiler.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(426, 361);
+            this.Controls.Add(this.lstKisiler);
+            this.Controls.Add(this.btnVerileriCek);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnVerileriCek;
+        private System.Windows.Forms.ListBox lstKisiler;
     }
 }
 
